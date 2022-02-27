@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import SidebarLink from './SidebarLink';
 
 const Sidebar = () => (
   <nav>
     <ul>
       <li>
-        <Link to="/">Dashboard</Link>
+        <SidebarLink to="/">Dashboard</SidebarLink>
       </li>
       <li>
-        <Link to="/customers">Customers</Link>
+        <SidebarLink to="/customers">Customers</SidebarLink>
       </li>
     </ul>
   </nav>
