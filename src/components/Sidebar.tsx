@@ -1,14 +1,14 @@
 import React from 'react';
-import CustomLink from './CustomLink';
+import SidebarLink from './SidebarLink';
 
 const Sidebar = () => (
   <nav>
     <ul>
       <li>
-        <CustomLink to="/">Dashboard</CustomLink>
+        <SidebarLink to="/">Dashboard</SidebarLink>
       </li>
       <li>
-        <CustomLink to="/customers">Customers</CustomLink>
+        <SidebarLink to="/customers">Customers</SidebarLink>
       </li>
     </ul>
   </nav>
