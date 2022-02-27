@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from './CustomLink';
 
 const Sidebar = () => (
   <nav>
     <ul>
       <li>
-        <Link to="/">Dashboard</Link>
+        <CustomLink to="/">Dashboard</CustomLink>
       </li>
       <li>
-        <Link to="/customers">Customers</Link>
+        <CustomLink to="/customers">Customers</CustomLink>
       </li>
     </ul>
   </nav>
