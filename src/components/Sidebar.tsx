@@ -12,10 +12,15 @@ const Sidebar = () => (
     <nav>
       <ul>
         <li>
-          <SidebarLink to="/">Dashboard</SidebarLink>
+          <SidebarLink to="/">
+            <i className="bx bxs-dashboard" /> Dashboard
+          </SidebarLink>
         </li>
         <li>
-          <SidebarLink to="/customers">Customers</SidebarLink>
+          <SidebarLink to="/customers">
+            <i className="bx bxs-user-pin" />
+            Customers
+          </SidebarLink>
         </li>
       </ul>
     </nav>

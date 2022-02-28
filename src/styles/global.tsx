@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import 'sanitize.css'; // reset css
+import 'boxicons/css/boxicons.min.css';
 
 const globalStyle = css`
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
