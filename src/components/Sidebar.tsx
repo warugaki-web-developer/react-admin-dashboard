@@ -27,10 +27,7 @@ const Sidebar = () => {
           {items.map(({ label, url, boxIcons }, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <li key={index}>
-              <SidebarLink to={url}>
-                <i className={boxIcons} />
-                {label}
-              </SidebarLink>
+              <SidebarLink boxIcons={boxIcons} label={label} url={url} />
             </li>
           ))}
         </ul>
