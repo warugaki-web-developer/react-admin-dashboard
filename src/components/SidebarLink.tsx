@@ -2,16 +2,24 @@ import React from 'react';
 
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
-import type { LinkProps } from 'react-router-dom';
+type SidebarLinkProps = {
+  label: string;
+  url: string;
+  boxIcons: string;
+};
 
-const SidebarLink = ({ children, to }: LinkProps) => {
-  const resolved = useResolvedPath(to);
+const SidebarLink = ({ label, url, boxIcons }: SidebarLinkProps) => {
+  const resolved = useResolvedPath(url);
   const match = useMatch({ path: resolved.pathname, end: true });
 
   return (
     <div>
-      <Link style={{ textDecoration: match ? 'underline' : 'none' }} to={to}>
-        {children}
+      <Link
+        className={boxIcons}
+        style={{ textDecoration: match ? 'underline' : 'none' }}
+        to={url}
+      >
+        {label}
       </Link>
       {match && ' (active)'}
     </div>
