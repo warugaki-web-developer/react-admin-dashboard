@@ -3,7 +3,7 @@ import 'sanitize.css'; // reset css
 import 'boxicons/css/boxicons.min.css';
 
 const globalStyle = css`
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
   :root {
     --main-bg: #fff;
