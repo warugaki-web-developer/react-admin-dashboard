@@ -51,6 +51,14 @@ const globalStyle = css`
     text-decoration: none;
   }
 
+  button {
+    color: var(--txt-color);
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+
   img {
     width: 100%;
     height: auto;

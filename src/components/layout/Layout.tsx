@@ -3,6 +3,7 @@ import { css } from '@emotion/react';
 
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar';
+import TopNavigation from '../TopNavigation';
 
 const layoutStyle = css`
   & {
@@ -33,6 +34,7 @@ const Layout = () => (
       <Sidebar />
     </div>
     <div className="layout__content">
+      <TopNavigation />
       <main className="layout__content-main">
         <Outlet />
       </main>
